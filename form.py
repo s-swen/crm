@@ -43,7 +43,7 @@ class SignUpForm(UserCreationForm):
         )
 
     def __init__(self, *args, **kwargs):
-        super(SignUpForm, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
         # Username
         self.fields['username'].widget.attrs['class'] = 'form-control'
